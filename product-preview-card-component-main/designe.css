@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+}
+img{
+    max-width: 100%;
+    display: inherit;
+    
+}
+.card{
+   padding-top: 8rem;
+}
+.card-container{
+    max-width: 700px;
+    display: flex;
+    background-color: white;
+    border-radius: 1rem;
+    overflow: hidden;
+ }
+.right-section{
+    max-width: 50%;
+    padding: 2rem 2rem 3rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.right-section  h1{
+    color: hsl(228, 12%, 48%);
+    opacity: .8;
+    font-weight: 500;
+    letter-spacing: 5px;
+    font-size: 14px;
+}
+.right-section h2{
+    font-family: 'Fraunces', serif;
+    color: hsl(212, 21%, 14%);
+    font-weight: 700;
+    font-size: 2.5rem;
+    width: 14rem;
+    line-height: 2.7rem;
+}
+.description {
+    color: hsl(228, 12%, 48%);
+    line-height: 1.7rem;
+    font-size: 16px;
+    font-weight: 400;
+}
+.prices{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.prices b{
+    font-family:'Fraunces', serif ;
+    font-size: 2.3rem;
+    color:hsl(158, 36%, 37%);
+}
+.prices p{
+    color:  hsl(228, 12%, 48%);
+    text-decoration: line-through;
+    opacity: .8;
+    font-size: 14px;
+}
+.add-button{
+    display: flex;
+    justify-content: center;
+    gap: .6rem;
+    background-color: hsl(158, 36%, 37%);
+    border:  none;
+    color: white;
+    padding: 1rem 2.5rem 1rem 2.5rem;
+    border-radius: .5rem;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.add-button:active{
+    background-color: hsl(158, 51%, 18%);;
+}
+
+@media screen and (max-width: 600px) 
+{ 
+    .card{
+        padding: 2rem 1rem 2rem 1rem;
+    }
+    .card-container{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        overflow: hidden;
+    }
+    .right-section{
+        padding: 1rem  2rem 1rem 1rem;
+        max-width: 100%;
+        display: flex;
+        gap: 0.6rem;
+    }
+    .right-section h2{
+        width: 80%;
+    }
+    .right-section h3{
+        width: 40%;
+    }
+    .description {
+        overflow-wrap: break-word; 
+        word-wrap: break-word; 
+        word-break: break-word;
+    }
+}
